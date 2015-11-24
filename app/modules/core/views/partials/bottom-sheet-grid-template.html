@@ -1,0 +1,17 @@
+<md-bottom-sheet class="md-list md-has-header" ng-cloak>
+  <md-subheader>Comment Actions</md-subheader>
+  <md-list layout-gt-sm="row" >
+    <md-list-item ng-repeat="item in items">
+      <md-button
+          ng-click="listItemClick($index)"
+          md-autofocus="$index == 2"
+          class="md-list-item-content" >
+        <!--   
+        <md-icon md-svg-src="{{item.icon}}"></md-icon>
+        -->
+        <ng-md-icon icon="{{item.icon}}" size="24"></ng-md-icon>
+        <span class="md-inline-list-icon-label">{{ item.name }}</span>
+      </md-button>
+    </md-list-item>
+  </md-list>
+</md-bottom-sheet>
