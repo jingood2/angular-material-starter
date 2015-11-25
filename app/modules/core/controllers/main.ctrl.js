@@ -68,7 +68,6 @@
           $scope.alert = '';  
 
           $mdBottomSheet.show({
-            //template: '<md-bottom-sheet class="md-list md-has-header" ng-cloak> <md-subheader>Comment Actions</md-subheader> <md-list > <md-list-item ng-repeat="item in items">  <md-button ng-click="listItemClick($index)" md-autofocus="$index == 2" class="md-list-item-content" >  <ng-md-icon icon="{{item.icon}}" size="24"></ng-md-icon> <span class="md-inline-list-icon-label">{{ item.name }}</span> </md-button> </md-list-item> </md-list>  </md-bottom-sheet>',
             templateUrl: 'modules/core/views/partials/bottom-sheet-grid-template.html',
             controller: 'GridBottomSheetCtrl',
             clickOutsideToColose: false,
@@ -106,9 +105,10 @@
           }, function() {
             $scope.alert = 'You cancelled the dialog.';
           });
-  };
+        };
 
-      })
+      });
+      /*
       .controller('GridBottomSheetCtrl',function($scope, $mdBottomSheet){
 
         $scope.items = [
@@ -143,4 +143,5 @@
         };
 
       });
+*/
 })();
